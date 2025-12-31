@@ -28,7 +28,7 @@
         </a>
 
         <nav class="menu" aria-label="Primary">
-          <a href="#apps">Apps</a>
+          <a href="#coming-soon">Apps</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
@@ -49,9 +49,9 @@
             </p>
 
             <div class="cta">
-              <!-- Update this link if you know your exact developer page URL -->
+              <!-- Add your real Google Play developer page link later -->
               <a class="btn" href="#" target="_blank" rel="noopener">View on Google Play</a>
-              <a class="btn ghost" href="#apps">See apps</a>
+              <a class="btn ghost" href="#coming-soon">Apps coming soon</a>
             </div>
 
             <div class="mini">
@@ -70,69 +70,52 @@
             </p>
           </div>
 
-          <div class="hero-card" role="img" aria-label="App preview placeholder">
-            <div class="mock">
-              <div class="mock-top"></div>
-              <div class="mock-body">
-                <div class="mock-line w70"></div>
-                <div class="mock-line w85"></div>
-                <div class="mock-line w60"></div>
-                <div class="mock-grid">
-                  <div class="mock-tile"></div>
-                  <div class="mock-tile"></div>
-                  <div class="mock-tile"></div>
-                  <div class="mock-tile"></div>
-                </div>
+          <!-- Coming soon banner (replaces screenshots/apps preview) -->
+          <div class="hero-card coming-soon">
+            <div class="coming-box">
+              <span class="coming-badge">Coming Soon</span>
+              <h3>Our mobile apps are launching soon</h3>
+              <p>
+                We are currently preparing and publishing our applications.
+                Please check back soon or contact us for more information.
+              </p>
+              <div class="card-actions" style="margin-top: 12px;">
+                <a class="btn small" href="#contact">Contact us</a>
+                <a class="btn small ghost" href="#privacy">Privacy Policy</a>
               </div>
             </div>
-            <p class="muted center">
-              Add screenshots later (optional). This is a clean placeholder.
-            </p>
           </div>
         </div>
       </section>
 
-      <!-- APPS -->
-      <section id="apps" class="section">
+      <!-- COMING SOON SECTION -->
+      <section class="section alt" id="coming-soon">
         <div class="container">
           <div class="section-head">
-            <h2>Apps</h2>
-            <p class="muted">Add your apps here with links to Google Play.</p>
+            <h2>Our Apps Are Coming Soon</h2>
+            <p class="muted">
+              We are currently preparing our applications for release on Google Play.
+            </p>
           </div>
 
-          <div class="cards">
-            <article class="card">
-              <h3>App Name #1</h3>
-              <p>Short description of what the app does and who it helps.</p>
-              <div class="card-actions">
-                <a class="btn small" href="#" target="_blank" rel="noopener">Google Play</a>
-                <a class="btn small ghost" href="#contact">Support</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <h3>App Name #2</h3>
-              <p>Short description of what the app does and why users love it.</p>
-              <div class="card-actions">
-                <a class="btn small" href="#" target="_blank" rel="noopener">Google Play</a>
-                <a class="btn small ghost" href="#contact">Support</a>
-              </div>
-            </article>
-
-            <article class="card">
-              <h3>App Name #3</h3>
-              <p>Short description. Duplicate or remove these cards as needed.</p>
-              <div class="card-actions">
-                <a class="btn small" href="#" target="_blank" rel="noopener">Google Play</a>
-                <a class="btn small ghost" href="#contact">Support</a>
-              </div>
-            </article>
+          <div class="card" style="max-width: 760px; margin: 0 auto; text-align: center;">
+            <h3>🚀 Launch in progress</h3>
+            <p>
+              XYLENEX SIA is actively developing and publishing mobile applications.
+              Once available, they will appear on our Google Play developer page.
+            </p>
+            <p class="muted">
+              Want updates? Contact us and we’ll share release information.
+            </p>
+            <div style="margin-top: 16px;">
+              <a class="btn" href="#contact">Contact us</a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="section alt">
+      <section id="about" class="section">
         <div class="container">
           <div class="section-head">
             <h2>About XYLENEX SIA</h2>
@@ -176,7 +159,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section id="contact" class="section">
+      <section id="contact" class="section alt">
         <div class="container">
           <div class="section-head">
             <h2>Contact Us</h2>
@@ -219,7 +202,7 @@
       </section>
 
       <!-- PRIVACY POLICY -->
-      <section id="privacy" class="section alt">
+      <section id="privacy" class="section">
         <div class="container">
           <div class="section-head">
             <h2>Privacy Policy</h2>
@@ -306,7 +289,7 @@
       </section>
 
       <!-- TERMS OF SERVICE -->
-      <section id="terms" class="section">
+      <section id="terms" class="section alt">
         <div class="container">
           <div class="section-head">
             <h2>Terms of Service</h2>
@@ -392,7 +375,7 @@
         </div>
 
         <div class="footer-links">
-          <a href="#apps">Apps</a>
+          <a href="#coming-soon">Apps</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
           <a href="#privacy">Privacy</a>
@@ -403,13 +386,13 @@
           © <span id="year"></span> XYLENEX SIA<br />
           Mazā Smilšu iela 8, Centra rajons, Rīga, LV-1050<br />
           Phone: +371 26205676<br />
-          Email: <a href="mailto:contact@xylenexdev.com">contact@xylenexdev.com</a>
+          Email: <a href="mailto:contact@xylenexdev.com">contact@xylenexdev.com</a><br />
+          Website: <a href="https://xylenexdev.com" target="_blank" rel="noopener">xylenexdev.com</a>
         </div>
       </div>
     </footer>
 
     <script>
-      // Footer + legal dates
       const today = new Date().toLocaleDateString();
       document.getElementById("year").textContent = new Date().getFullYear();
       document.getElementById("privacyUpdated").textContent = today;
