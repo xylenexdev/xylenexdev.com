@@ -1,344 +1,295 @@
-:root {
-  --bg: #070b14;
-  --panel: rgba(255, 255, 255, 0.06);
-  --panel-2: rgba(255, 255, 255, 0.045);
-  --border: rgba(255, 255, 255, 0.12);
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.68);
-  --muted2: rgba(255, 255, 255, 0.56);
-  --accent: #7c5cff;
-  --accent2: #25c2a0;
-  --shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
-  --radius: 18px;
-  --max: 1120px;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>XYLENEX SIA — Mobile Apps</title>
+    <meta
+      name="description"
+      content="XYLENEX SIA — Mobile apps and digital products. Contact: contact@xylenexdev.com"
+    />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Optional: nice font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
-  margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: radial-gradient(1200px 600px at 20% 10%, rgba(124, 92, 255, 0.28), transparent 55%),
-              radial-gradient(1000px 700px at 90% 25%, rgba(37, 194, 160, 0.20), transparent 60%),
-              var(--bg);
-  color: var(--text);
-  line-height: 1.55;
-}
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="XYLENEX SIA home">
+          <span class="logo" aria-hidden="true">X</span>
+          <span class="brand-text">XYLENEX SIA</span>
+        </a>
 
-a { color: inherit; text-decoration: none; }
-a:hover { text-decoration: underline; }
+        <nav class="menu" aria-label="Primary">
+          <a href="#apps">Apps</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="btn small" href="#privacy">Privacy</a>
+        </nav>
+      </div>
+    </header>
 
-.container {
-  width: 100%;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 18px;
-}
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="badge">Google Play Developer</p>
+            <h1>We build helpful mobile apps and digital experiences.</h1>
+            <p class="lead">
+              XYLENEX SIA publishes apps focused on simplicity, reliability, and a great user experience.
+            </p>
 
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  background: rgba(7, 11, 20, 0.55);
-  border-bottom: 1px solid var(--border);
-}
+            <div class="cta">
+              <!-- Replace the Google Play URL when you want -->
+              <a class="btn" href="#" target="_blank" rel="noopener">View on Google Play</a>
+              <a class="btn ghost" href="#apps">See apps</a>
+            </div>
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-}
+            <div class="mini">
+              <div class="mini-card">
+                <div class="mini-title">Support</div>
+                <a href="mailto:contact@xylenexdev.com">contact@xylenexdev.com</a>
+              </div>
+              <div class="mini-card">
+                <div class="mini-title">Phone</div>
+                <a href="tel:+37126205676">+371 26205676</a>
+              </div>
+            </div>
+          </div>
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-.logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  display: inline-grid;
-  place-items: center;
-  background: linear-gradient(135deg, rgba(124, 92, 255, 1), rgba(37, 194, 160, 1));
-  color: white;
-  box-shadow: 0 10px 25px rgba(124, 92, 255, 0.25);
-}
-.brand-text { font-size: 15px; }
+          <div class="hero-card" role="img" aria-label="App preview placeholder">
+            <div class="mock">
+              <div class="mock-top"></div>
+              <div class="mock-body">
+                <div class="mock-line w70"></div>
+                <div class="mock-line w85"></div>
+                <div class="mock-line w60"></div>
+                <div class="mock-grid">
+                  <div class="mock-tile"></div>
+                  <div class="mock-tile"></div>
+                  <div class="mock-tile"></div>
+                  <div class="mock-tile"></div>
+                </div>
+              </div>
+            </div>
+            <p class="muted center">
+              Add screenshots later (optional). This box is just a clean placeholder.
+            </p>
+          </div>
+        </div>
+      </section>
 
-.menu {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  font-weight: 600;
-  color: var(--muted);
-}
-.menu a { padding: 8px 10px; border-radius: 10px; }
-.menu a:hover { background: rgba(255, 255, 255, 0.06); text-decoration: none; color: var(--text); }
+      <!-- APPS -->
+      <section id="apps" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Apps</h2>
+            <p class="muted">Add your apps here with links to Google Play.</p>
+          </div>
 
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: linear-gradient(135deg, rgba(124, 92, 255, 0.95), rgba(37, 194, 160, 0.80));
-  color: white;
-  font-weight: 700;
-  box-shadow: var(--shadow);
-  text-decoration: none !important;
-}
-.btn:hover { filter: brightness(1.06); }
-.btn.small { padding: 9px 12px; border-radius: 12px; box-shadow: none; }
+          <div class="cards">
+            <!-- APP CARD 1 -->
+            <article class="card">
+              <h3>App Name #1</h3>
+              <p>Short description of what the app does and who it helps.</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Google Play</a>
+                <a class="btn small ghost" href="#contact">Support</a>
+              </div>
+            </article>
 
-.btn.ghost {
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--text);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: none;
-}
-.btn.ghost:hover { background: rgba(255, 255, 255, 0.10); }
+            <!-- APP CARD 2 -->
+            <article class="card">
+              <h3>App Name #2</h3>
+              <p>Short description of what the app does and why users love it.</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Google Play</a>
+                <a class="btn small ghost" href="#contact">Support</a>
+              </div>
+            </article>
 
-.hero {
-  padding: 56px 0 22px;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 26px;
-  align-items: center;
-}
+            <!-- APP CARD 3 -->
+            <article class="card">
+              <h3>App Name #3</h3>
+              <p>Short description. You can remove or duplicate cards as needed.</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Google Play</a>
+                <a class="btn small ghost" href="#contact">Support</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 12px;
-  letter-spacing: 0.3px;
-  color: rgba(255, 255, 255, 0.82);
-  padding: 7px 10px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-}
+      <!-- ABOUT -->
+      <section id="about" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>About XYLENEX SIA</h2>
+            <p class="muted">
+              We develop and publish mobile apps under the developer name <strong>XYLENEX SIA</strong>.
+            </p>
+          </div>
 
-h1 {
-  margin: 12px 0 10px;
-  font-size: 44px;
-  line-height: 1.08;
-  letter-spacing: -0.6px;
-}
-.lead {
-  margin: 0 0 18px;
-  color: var(--muted);
-  font-size: 17px;
-  max-width: 58ch;
-}
+          <div class="two-col">
+            <div class="info">
+              <h3>Company details</h3>
+              <ul class="list">
+                <li><span>Legal name</span><strong>XYLENEX SIA</strong></li>
+                <li><span>Developer name</span><strong>XYLENEX SIA</strong></li>
+                <li><span>Address</span><strong>Mazā Smilšu iela 8, Centra rajons, Rīga, LV-1050</strong></li>
+                <li><span>Phone</span><strong><a href="tel:+37126205676">+371 26205676</a></strong></li>
+                <li><span>Email</span><strong><a href="mailto:contact@xylenexdev.com">contact@xylenexdev.com</a></strong></li>
+                <li><span>Website</span><strong><a href="https://xylenexdev.com" target="_blank" rel="noopener">xylenexdev.com</a></strong></li>
+              </ul>
+            </div>
 
-.cta {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin: 18px 0 16px;
-}
+            <div class="info">
+              <h3>What you can expect</h3>
+              <ul class="bullets">
+                <li>Clear and simple user experience</li>
+                <li>Fast support via email</li>
+                <li>Ongoing improvements and updates</li>
+              </ul>
 
-.mini {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 10px;
-}
-.mini-card {
-  padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-}
-.mini-title {
-  font-size: 12px;
-  color: var(--muted2);
-  margin-bottom: 4px;
-  font-weight: 600;
-}
+              <div class="note">
+                <strong>Tip:</strong> If Google Play ever asks for a developer website,
+                this page includes your identity and contact details in one place.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-.hero-card {
-  padding: 16px;
-  border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow);
-}
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Contact</h2>
+            <p class="muted">For support, partnerships, or business inquiries.</p>
+          </div>
 
-.mock {
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-.mock-top { height: 42px; background: rgba(255, 255, 255, 0.06); }
-.mock-body { padding: 16px; }
+          <div class="contact-grid">
+            <div class="card">
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:contact@xylenexdev.com">contact@xylenexdev.com</a>
+              </p>
+              <p class="muted">
+                We usually reply within 1–2 business days.
+              </p>
+            </div>
 
-.mock-line {
-  height: 10px;
-  border-radius: 999px;
-  margin: 10px 0;
-  background: rgba(255, 255, 255, 0.12);
-}
-.w70 { width: 70%; }
-.w85 { width: 85%; }
-.w60 { width: 60%; }
+            <div class="card">
+              <h3>Phone</h3>
+              <p>
+                <a href="tel:+37126205676">+371 26205676</a>
+              </p>
+              <p class="muted">
+                Available during standard business hours.
+              </p>
+            </div>
 
-.mock-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-top: 14px;
-}
-.mock-tile {
-  height: 72px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-}
+            <div class="card">
+              <h3>Address</h3>
+              <p>Mazā Smilšu iela 8<br />Centra rajons, Rīga, LV-1050</p>
+              <p class="muted">
+                Latvia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-.section {
-  padding: 54px 0;
-}
-.section.alt {
-  background: rgba(255, 255, 255, 0.03);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
+      <!-- PRIVACY -->
+      <section id="privacy" class="section alt">
+        <div class="container">
+          <div class="section-head">
+            <h2>Privacy Policy</h2>
+            <p class="muted">
+              This is a simple placeholder privacy policy for your developer landing page.
+              If you have apps that collect data, we should tailor this properly.
+            </p>
+          </div>
 
-.section-head {
-  margin-bottom: 18px;
-}
-h2 {
-  margin: 0 0 6px;
-  font-size: 28px;
-  letter-spacing: -0.3px;
-}
-.muted { color: var(--muted); }
-.small { font-size: 12px; }
-.center { text-align: center; }
-.right { text-align: right; }
+          <div class="policy">
+            <h3>1. Overview</h3>
+            <p>
+              XYLENEX SIA (“we”, “our”) operates this website to provide information and support
+              related to our mobile applications.
+            </p>
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 14px;
-}
-.card {
-  padding: 16px 16px 14px;
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-}
-.card h3 { margin: 0 0 6px; font-size: 17px; }
-.card p { margin: 0 0 12px; color: var(--muted); }
-.card-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+            <h3>2. Data we collect</h3>
+            <p>
+              This website does not require you to create an account. If you contact us by email,
+              we receive the information you send (such as your email address and message content).
+            </p>
 
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 10px;
-}
+            <h3>3. How we use data</h3>
+            <p>
+              We use emails only to respond to support requests and business inquiries.
+              We do not sell your personal data.
+            </p>
 
-.info {
-  padding: 16px;
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-}
-.info h3 { margin: 0 0 10px; }
+            <h3>4. Third-party services</h3>
+            <p>
+              Our apps may use third-party services (such as Google Play services, analytics, or advertising)
+              depending on the app. Each app’s store listing and/or in-app privacy information describes what applies.
+            </p>
 
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.list li {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.10);
-}
-.list li:last-child { border-bottom: 0; }
-.list span { color: var(--muted2); font-weight: 600; }
-.list strong a { text-decoration: underline; }
+            <h3>5. Contact</h3>
+            <p>
+              If you have questions about this policy, contact us at
+              <a href="mailto:contact@xylenexdev.com">contact@xylenexdev.com</a>.
+            </p>
 
-.bullets {
-  margin: 0;
-  padding-left: 18px;
-  color: var(--muted);
-}
-.bullets li { margin: 8px 0; }
+            <p class="muted small">
+              Last updated: <span id="lastUpdated"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
 
-.note {
-  margin-top: 14px;
-  padding: 12px 14px;
-  border-radius: 16px;
-  border: 1px solid rgba(124, 92, 255, 0.22);
-  background: rgba(124, 92, 255, 0.10);
-  color: rgba(255, 255, 255, 0.86);
-}
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="logo" aria-hidden="true">X</span>
+            <span class="brand-text">XYLENEX SIA</span>
+          </div>
+          <p class="muted">
+            Developer website for apps published by XYLENEX SIA.
+          </p>
+        </div>
 
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-  margin-top: 14px;
-}
+        <div class="footer-links">
+          <a href="#apps">Apps</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#privacy">Privacy</a>
+        </div>
 
-.policy {
-  padding: 18px 16px;
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.10);
-}
-.policy h3 { margin: 16px 0 8px; }
-.policy h3:first-child { margin-top: 0; }
-.policy p { margin: 0 0 10px; color: var(--muted); }
+        <div class="muted small right">
+          © <span id="year"></span> XYLENEX SIA<br />
+          Mazā Smilšu iela 8, Centra rajons, Rīga, LV-1050<br />
+          Phone: +371 26205676
+        </div>
+      </div>
+    </footer>
 
-.footer {
-  padding: 26px 0 34px;
-  border-top: 1px solid rgba(255, 255, 255, 0.10);
-  background: rgba(0, 0, 0, 0.18);
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr 1fr;
-  gap: 14px;
-  align-items: start;
-}
-.footer-links {
-  display: grid;
-  gap: 8px;
-  color: var(--muted);
-}
-.footer-brand { margin-bottom: 10px; }
-
-@media (max-width: 940px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  h1 { font-size: 38px; }
-  .cards { grid-template-columns: 1fr; }
-  .two-col { grid-template-columns: 1fr; }
-  .contact-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
-  .right { text-align: left; }
-}
-
-@media (max-width: 520px) {
-  .menu { display: none; }
-  h1 { font-size: 34px; }
-  .mini { grid-template-columns: 1fr; }
-}
+    <script>
+      // Simple footer dates
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("lastUpdated").textContent = new Date().toLocaleDateString();
+    </script>
+  </body>
+</html>
